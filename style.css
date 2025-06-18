@@ -1,0 +1,183 @@
+/* Poseydon fon */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 50, 0.7);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar button {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #005bcc;
+}
+
+button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+
+/* Sectionlar */
+.section {
+  display: none;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+/* Keys container */
+#keysContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.key {
+  width: 100px;
+  height: 120px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  border: 2px solid #0077ff;
+}
+
+.key img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
+
+.key span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* Input va tugmalar */
+input {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 90%;
+  max-width: 300px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+/* Mobilga mos dizayn */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #keysContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .key {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
+
+
+body{
+    background-color: rgb(3, 2, 76);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
