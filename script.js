@@ -43,7 +43,7 @@ function updateProfile() {
 // Admindan coin yuborish
 function sendCoins() {
   const admin = currentUser;
-  const adminUsers = ["Behruz", "Maga"];
+  const adminUsers = ["Behruz", "Muhammad"];
 
 if (!adminUsers.includes(admin)) {
   return alert("Faqat admin kirishi mumkin!");
